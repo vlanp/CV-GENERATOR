@@ -135,10 +135,10 @@ body.scale-cv {
   padding: 0 1rem 0 1.25rem;
 }
 
-.scale-cv .home_img {
-  width: 100px;
-  height: 100px;
-}
+/* .scale-cv .home_img {
+  width: 160px;
+  height: 160px;
+} */
 
 .scale-cv .home_container {
   gap: 1.5rem;
@@ -249,6 +249,11 @@ h3 {
 ul {
   padding: 0;
   list-style: none;
+}
+
+.sub_list {
+  padding: 0 2rem;
+  list-style: inherit;
 }
 
 a {
@@ -390,12 +395,24 @@ img {
   text-align: center;
 }
 
-.home_img {
-  width: 120px;
-  height: 120px;
+.home_img_div {
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   justify-self: center;
   margin-bottom: var(--margin-1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_img {
+  /* object-fit: cover; */
+  /* background-image: url(../pictures/profile.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; */
 }
 
 .home_title {
@@ -405,6 +422,12 @@ img {
 .home_profession {
   font-size: var(--normal-font-size);
   margin-bottom: var(--margin-1);
+}
+
+.home_research {
+  font-size: var(--small-font-size);
+  margin-bottom: var(--margin-1);
+  color: var(--text-color);
 }
 
 .home_address {
@@ -598,6 +621,21 @@ img {
 .certificate_honours {
   font-size: var(--smaller-font-size);
   color: var(--text-color);
+}
+
+.all_technos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.techno_img_div {
+  width: 100px;
+  height: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Languages */

@@ -171,8 +171,8 @@ function generateResume() {
     let opt = {
       margin: 0,
       filename: "myResumeCV-dark.pdf",
-      image: { type: "jpeg", quality: 0.98 },
-      html2canvas: { scale: 4, useCORS: true },
+      image: { type: "jpeg", quality: 1 },
+      html2canvas: { scale: 4, useCORS: true, dpi: 1200 },
       jsPDF: { format: "a4", orientation: "portrait" },
     };
     html2pdf(areaCV, opt);
@@ -181,8 +181,8 @@ function generateResume() {
     let opt = {
       margin: 0,
       filename: "myResumeCV-light.pdf",
-      image: { type: "jpeg", quality: 0.98 },
-      html2canvas: { scale: 4, useCORS: true },
+      image: { type: "jpeg", quality: 1 },
+      html2canvas: { scale: 4, useCORS: true, dpi: 1200 },
       jsPDF: { format: "a4", orientation: "portrait" },
     };
     html2pdf(areaCV, opt);
@@ -196,5 +196,5 @@ resumeButton.addEventListener("click", () => {
   // Generate the PDF
   generateResume();
   // Remove adaptation after 1 second (you can choose to set more than 1 second if your PDF download time is long)
-  setTimeout(removeScaleCV, 1000);
+  setTimeout(removeScaleCV, 3000);
 });
