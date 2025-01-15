@@ -427,6 +427,7 @@ img {
 .home_profession {
   font-size: var(--normal-font-size);
   margin-bottom: var(--margin-1);
+  color: var(--text-color);
 }
 
 .home_research {
@@ -752,6 +753,9 @@ img {
 
   .resume_left {
     background-color: var(--container-color-alt);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   .resume_left,
