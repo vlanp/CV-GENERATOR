@@ -13,7 +13,7 @@ function getAge(dateString) {
   return age;
 }
 
-document.getElementById("age_calc").textContent = getAge("1997-12-30") + " ans";
+document.getElementById("age_calc").textContent = getAge("1997-12-30");
 
 /*fetch('assets/pictures/profile.txt', {
     mode: 'no-cors',
